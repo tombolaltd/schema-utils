@@ -194,10 +194,10 @@ class Plugin {
 
 #### [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/schema-utils.svg
+[npm]: https://img.shields.io/npm/v/@webpack-contrib/schema-utils.svg
 [npm-url]: https://npmjs.com/package/schema-utils
 
-[node]: https://img.shields.io/node/v/schema-utils.svg
+[node]: https://img.shields.io/node/v/@webpack-contrib/schema-utils.svg
 [node-url]: https://nodejs.org
 
 [deps]: https://david-dm.org/webpack-contrib/schema-utils.svg
