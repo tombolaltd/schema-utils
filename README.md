@@ -38,7 +38,7 @@ $ npm install @webpack-contrib/schema-utils --save-dev
 
 ## API
 
-When using the API directly, the main entry point  is the `serve` function, which
+When using the API directly, the main entry point is the `validate` function, which
 is the default export of the module.
 
 ```js
@@ -50,7 +50,7 @@ const name = '...'; // the load or plugin name validate() is being used in
 validate({ name, schema, target });
 ```
 
-### serve(options)
+### validate(options)
 
 Returns `true` if validation succeeded, `false` validation failed and options
 allow the function to return a value. (see options below).
@@ -59,7 +59,7 @@ allow the function to return a value. (see options below).
 
 Type: `Object`
 
-Options for initializing and controlling the server provided. The option names
+Options for initializing and controlling the validator. The option names
 listed below belong to the `options` object.
 
 #### `exit`
