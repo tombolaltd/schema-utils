@@ -17,6 +17,21 @@ const ValidationError = require('./ValidationError');
 const ajv = new Ajv({
   allErrors: true,
   jsonPointers: true,
+  useDefaults: true,
+  $data: true
+});
+
+ajv.addKeyword('isNotEmpty', {
+  type: 'string',
+  validate: (schema, data) => {
+      if (!schema) {
+          // only validate if isNotEmpty = true;
+          return true;
+      }
+
+      return schema && typeof data === 'string' && data.trim() !== '';
+  },
+  errors: false
 });
 
 errors(ajv);
